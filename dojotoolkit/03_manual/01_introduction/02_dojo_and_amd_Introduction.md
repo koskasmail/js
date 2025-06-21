@@ -37,10 +37,12 @@
     * components
     * properties
     * declaration
-  * dijit layered on top of dojo require
+
+  * Dijit layered on top of dojo require
     *  dojo core packages
     *  dojo base packages
-  * dijit can build
+ 
+  * Dijit can build
     * dialog boxes
     * calendars
     * color palettes
@@ -48,14 +50,14 @@
     * wait buttons
     * content pane
     * praphs
-    * etc
+    * etc...
 
 ----
 
 ### 3. [ Dojox ]
   * Dojox - Dojo Extensions
   * Dev additional dojo funcationality.
-  * experimental features area (laboratory).
+  * Experimental features area (laboratory).
   * Dojo 2 will be merged with and dijit packages.
 
 ----
