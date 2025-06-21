@@ -5,7 +5,8 @@
 #### `Dojo Toolkit`
 
 * Dojo is a JavaScript framework for client-side web development.
-  * Dojo is completely open source. The toolkit includes about three thousand JavaScript modules, in addition to images and other resources.[citation needed]
+  * Dojo is completely open source.
+  * `Dojo toolkit` includes many JavaScript modules, images, etc...
 
 ----
      
