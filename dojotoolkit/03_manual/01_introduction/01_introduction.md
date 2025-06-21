@@ -62,9 +62,8 @@
       * string manipulations
       * etc...
 
+
 ----
-
-
 
 <p align="right">(<a href="#topage">back to top</a>)</p>
 <br/>
