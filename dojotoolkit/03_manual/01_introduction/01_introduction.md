@@ -2,20 +2,20 @@
  
 # 01_introduction
 
-### `Dojo Toolkit`
+#### `Dojo Toolkit`
 
 * Dojo is a JavaScript framework for client-side web development.
   * Dojo is completely open source. The toolkit includes about three thousand JavaScript modules, in addition to images and other resources.[citation needed]
 
 ----
      
-* `Dojo Toolkit` is an open-source modular JavaScript library
+#### `Dojo Toolkit` is an open-source modular JavaScript library
    * used  to  develop User Interface components for web applications.
    * Creating web pages and eliminating cross browser inconsistencies.
 
 ----
 
-* `dojo Toolkit` is a library used to perform
+#### `dojo Toolkit` is a library used to perform
    * DOM (Document Object Model) manipulations,
    * Ajax requests,
    * UI (user interface) widgets
@@ -26,7 +26,8 @@
 
 -----
 
-* Dojo Toolkit:
+#### [ Dojo Toolkit ]
+
    * `dojo` -  contains the core and most non-visual `modules`.
    * `dijit` (ui) -  is a library of user-interface `modules` (UI Modules) for `widgets`, `layout`.
    * `dojox` -  is modules not yet considered stable enough to include in `dojo` or `dijit`.
@@ -35,9 +36,34 @@
        * documentation
        * style-checking
        * testing.
-
+  * create a rich and powerful web application using Dojo AMD based object oriented.
 
 ----
+
+#### [ subjects you should know ]
+
+   * HTML -  basic understanding
+    
+   * CSS  -  basic understanding
+      * adding margins,
+      * change backgrounds/font sizes/colors
+      * etc...
+      
+   * JavaScript - basic understanding
+      * variables
+      * arrays
+      * functions
+      * etc...
+    
+   * programming practices
+      * variable declarations and assignments
+      * looping
+      * string manipulations
+      * etc...
+
+----
+
+
 
 <p align="right">(<a href="#topage">back to top</a>)</p>
 <br/>
