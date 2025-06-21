@@ -26,7 +26,7 @@
 * Example: load both **Dojo Toolkit** and **jQuery** on the same page and use them without stepping on each other's toes.
 
 
-##### Example 1: Using Dojo and jQuery Together
+#### Example 1: Using Dojo and jQuery Together
 
 ```html
 <!DOCTYPE html>
@@ -62,14 +62,14 @@
 </html>
 ```
 
-### Key Points:
+##### Key Points:
 - jQuery runs on `$(document).ready(...)`, while Dojo uses AMD with `require()` and `domReady!`.
 - Each library updates its own section, avoiding overlap.
 - If needed, you can also **scope jQuery with `noConflict()`** to avoid any global symbol conflicts with `$`.
 
 ----
 
-##### Example 2: Click Buttons with Dojo and jQuery
+#### Example 2: Click Buttons with Dojo and jQuery
 
 ```html
 <!DOCTYPE html>
@@ -119,13 +119,101 @@
 </html>
 ```
 
-### Key Points:
+##### Key Points:
 - The **jQuery button** uses `$().click()` to update its own result text.
 - The **Dojo button** uses `dojo/on` to handle its click event separately.
 - They coexist peacefully in the same page!
 
+----
 
-##### Example 3: 
+#### Example 3: `custom Dojo widget` that interacts with `jQuery` elements on the same page.
+
+---
+
+* create a Dojo widget, and when the widget is clicked, it will update content `inside a jQuery-managed element`.
+
+---
+
+##### File Structure
+```
+/project
+│
+├── app/
+│   └── GreetingWidget.js
+│
+└── index.html
+```
+
+---
+
+### 1. **Dojo Widget – GreetingWidget.js**
+```javascript
+define([
+  "dojo/_base/declare",
+  "dijit/_WidgetBase",
+  "dojo/dom-construct"
+], function(declare, _WidgetBase, domConstruct) {
+
+  return declare([_WidgetBase], {
+    postCreate: function() {
+      this.inherited(arguments);
+
+      this.domNode.innerHTML = "👋 Hello from Dojo Widget!";
+      this.domNode.style.cursor = "pointer";
+
+      this.connect(this.domNode, "click", function() {
+        // Update jQuery-managed element
+        if (window.jQuery) {
+          jQuery("#jqueryTarget").text("Updated by Dojo widget!");
+        }
+      });
+    }
+  });
+});
+```
+
+---
+
+### 2. **HTML – index.html**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dojo Widget Meets jQuery</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Dojo -->
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.16.4/dojo/dojo.js"
+          data-dojo-config="async: true, parseOnLoad: true"></script>
+
+  <!-- Register custom widget -->
+  <script>
+    require(["dojo/parser", "app/GreetingWidget", "dojo/domReady!"], function(parser) {
+      parser.parse();
+    });
+  </script>
+</head>
+<body>
+  <h2>Dojo Widget + jQuery DOM Update</h2>
+
+  <!-- jQuery-managed area -->
+  <div id="jqueryTarget">Waiting for widget...</div>
+
+  <!-- Custom Dojo widget -->
+  <div data-dojo-type="app/GreetingWidget"></div>
+</body>
+</html>
+```
+
+### [ Thoughts ]
+
+* The **Dojo widget** initializes normally using `data-dojo-type`.
+* On click, it `talks to jQuery` using `jQuery(...)` directly from inside the widget.
+* This shows how both libraries can communicate smoothly in the same interface.
 
 
 ----
