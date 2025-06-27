@@ -10,7 +10,8 @@
 #### 1.1. [ Dojo Base ]
   * Base package of Dojo Toolkit
   * Base Dom utility function
-  * Dom querying manipulation
+  * Dom query
+  * Dom manipulation
   * Event handling
   * Css selectors
   * Ajax requests
@@ -21,15 +22,14 @@
 
 #### 1.2. [ Dojo Core ]
   * Bootstrap module
+  * Dojo core loads the
+      * Legacy loader 
+      * AMD loader  
   * IO management
      * drag+drop     
      * animation
      * browser history management
      * internationalization
-  * Dojo core loads the
-      * Loader
-      * Legacy loader 
-      * AMD loader
 
 ----
 
