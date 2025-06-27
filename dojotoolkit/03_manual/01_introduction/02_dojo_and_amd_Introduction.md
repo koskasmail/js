@@ -81,7 +81,7 @@
      * Dynamically load components.
      * Download only the necessary components.
      * Load all of the components.
- 
+     * AMD/javascript write once and use as needed.
 
 -----
 
