@@ -1,8 +1,8 @@
 <a name="topage"></a>
 
-# dojotoolkit cdn
+# dojo toolkit cdn
 
-#### dojotoolkit path
+#### dojo toolkit path
 
 ###### this github
 ```
@@ -17,7 +17,7 @@ https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js
 
 -----
 
-### dojotoolkit 1.14.1
+### dojo toolkit 1.14.1
 ```
 https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js
 ```
@@ -29,10 +29,24 @@ https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js
 
 ### sample: async=true
 
-#### configure the loader to operate in asynchronous mode. async configuration property to true:
+##### configure the loader to operate in asynchronous mode. async configuration property to true:
 ```
 <script data-dojo-config="async: true" src="js/lib/dojo/dojo.js"></script>
 ```
+
+-----
+
+### dojo toolkit older version
+
+* [dojo | 1.14.0 | dojo.js](https://ajax.googleapis.com/ajax/libs/dojo/1.14.0/dojo/dojo.js)
+
+
+-----
+
+##### Learn more
+
+* [dojotoolkit | 1.10 | cdn](https://dojotoolkit.org/documentation/tutorials/1.10/cdn/)
+
 
 ----
 
